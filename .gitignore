@@ -7,15 +7,27 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
 
-# Editor directories and files
+# Dependency directories
+node_modules/
+dist/
+dist-ssr/
+
+# Local environment settings
+*.local
+.env.local
+.env.*.local
+.env.sentry-build-plugin
+
+# IDE directories and project files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
@@ -23,5 +35,12 @@ dist-ssr
 *.sln
 *.sw?
 
-# Sentry Config File
-.env.sentry-build-plugin
+# Temporary files and directories
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.lock
+.cache/
+coverage/
